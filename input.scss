@@ -1,0 +1,120 @@
+@font-face {
+	font-family: Sofia-Pro;
+	src: url(assets/sofia_pro_regular.otf);
+	font-weight: 400;
+}
+
+$blue: #527aff;
+$orange: #f2994a;
+$lightblue: #b1b1ff;
+
+html {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(to bottom right, $orange, $blue);
+	font-family: 'Sofia-Pro';
+	font-size: 16px;
+	color: white;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	&.title {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	body {
+		&.fullheight {
+			height: 100%;
+			margin: 0;
+		}
+
+		opacity: 1;
+		transition: 0.5s opacity;
+
+		&.fade-out {
+			opacity: 0;
+			transition: 0.5s opacity;
+		}
+	}
+}
+
+img {
+	width: 5em;
+
+	&.logo {
+		width: 20em;
+	}
+
+	&.portrait {
+		width: 20em;
+	}
+}
+
+.nav-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	padding-top: 5em;
+	padding-left: 10em;
+}
+
+.content {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: calc(100% - 15em);
+	width: 100em;
+	margin: 0 auto;
+}
+
+h1 {
+	&.nav {
+		margin: 0;
+		margin-left: 1em;
+		display: inline-block;
+	}
+
+	&.name {
+		margin-bottom: 0;
+	}
+	font-size: 3em;
+}
+
+h2 {
+	margin: 0;
+	font-size: 2em;
+
+	&.year {
+		color: $lightblue;
+	}
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	color: $lightblue;
+	transition: color 0.3s;
+
+	&:hover {
+		color: white;
+		transition: color 0.3s;
+	}
+
+	&.nocolor {
+		color: white;
+	}
+}
