@@ -68,6 +68,32 @@ img.portrait {
   margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
+.contentnormal {
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 2em;
+  height: calc(100% - 16em);
+  overflow-y: scroll;
+}
+.contentnormal h2 {
+  font-size: 2.5em;
+}
+.contentnormal h3 {
+  font-size: 2em;
+}
+.contentnormal p {
+  font-size: 1.5em;
+}
+.contentnormal li p {
+  margin: 0;
+}
+
 h1 {
   font-size: 3em;
 }

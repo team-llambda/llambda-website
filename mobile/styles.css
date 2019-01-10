@@ -80,6 +80,26 @@ img.portrait {
   padding-top: 4em;
 }
 
+.contentnormal {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  height: calc(100% - 8em);
+  overflow-y: scroll;
+}
+.contentnormal h2 {
+  font-size: 2em;
+}
+.contentnormal h3 {
+  font-size: 1.5em;
+}
+.contentnormal p {
+  font-size: 1em;
+}
+.contentnormal li p {
+  margin: 0;
+}
+
 h1 {
   font-size: 2em;
 }

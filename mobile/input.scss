@@ -92,6 +92,32 @@ img {
 	padding-top: 4em;
 }
 
+.contentnormal {
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 2em;
+	height: calc(100% - 8em);
+	overflow-y: scroll;
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	li {
+		p {
+			margin: 0;
+		}
+	}
+}
+
 h1 {
 	&.nav {
 		margin: 0;
